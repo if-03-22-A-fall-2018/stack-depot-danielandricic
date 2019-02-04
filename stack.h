@@ -6,7 +6,7 @@
 #ifndef SPL_STACK_H
 #define SPL_STACK_H
 
-typedef struct StackImplementation* Stack;
+typedef struct StackImplementation *Stack;
 
 /**
  * Used to create a stack structure.
@@ -39,13 +39,13 @@ int get_count(Stack stack);
  * @param stack The stack from which to take.
  * @return The element returned from the stack.
  */
-void* pop_stack(Stack stack);
+void *pop_stack(Stack stack);
 
 /**
  * Returns the topmost item of the stack without removing it.
  * @param stack The stack from which to take.
  * @return The element returned from the stack.
 */
-void* peek_stack(Stack stack);
+void *peek_stack(Stack stack);
 
 #endif //SPL_STACK_H
